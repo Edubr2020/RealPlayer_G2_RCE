@@ -1,5 +1,7 @@
 Real Player v.20.0.8.310 G2 Control 'DoGoToURL()' Remote Code Execution Vulnerability
 
+Video demo: https://www.youtube.com/watch?v=9c9Q4VZQOUk
+
 Real Player G2 Control component contains a remote code execution vulnerability because it allows 'javascript:' URIs to be passed as the argument, which
 is usually not safe because in some scenarios could allow injection of script code in arbitrary domains (Universal Cross Site Scripting - uXSS) which can potentially be used to eg. steal cookies among other things.
 By setting the 'URL' parameter to 'javascript:' URI and the 'target' parameter to an 'iframe' html element, it´s possible to cause javascript code to run in the context of a local error page displayed after using the very same
